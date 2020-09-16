@@ -1,0 +1,75 @@
+#!/usr/bin/env python3
+
+# >>>>>>>>>>>>>>>>>>
+#
+# Glitch
+# Framework to create BEST malware and maintain connections forever.
+#
+# @rohitnishad613
+#
+# >>>>>>>>>>>>>>>>>>
+
+import os
+import sys
+import signal
+import subprocess
+
+# disable Ctrl + C key to exit
+
+
+def Shutdownhandler(signum, frame):
+    exit()
+
+
+# Set the signal handler
+signal.signal(signal.SIGINT, Shutdownhandler)
+
+# Getting currunt path
+currunt_path_temp = os.path.abspath(__file__)
+currunt_path = os.path.split(currunt_path_temp)[0]+"/"
+
+# print the Glitch banner
+exec(open(currunt_path + "scripts/banner.py").read())
+
+# make glitch folder in $HOME
+glitch_path = os.environ['HOME'] + "/Glitch"
+if not os.path.isdir(glitch_path):
+    os.mkdir(glitch_path)
+
+# command line arguments
+arguments = []
+
+# assing command line arguments as list
+for value in sys.argv:
+    arguments.append(value)
+
+# handle command line arguments
+
+if ("-h" in arguments or "--help" in arguments or len(arguments) == 1):
+    exec(open(currunt_path + "scripts/help.py").read())
+elif (arguments[1] == "start"):
+    if (len(arguments) > 2):
+        if arguments[2] == "handler":
+            if len(arguments) > 4:
+                host = arguments[3]
+                port = arguments[4]
+                script_descriptor = open(currunt_path + "Handler/handler.py")
+                script = script_descriptor.read()
+                sys.argv = ["handler.py", host, port]
+                exec(script)
+                script_descriptor.close()
+            else:
+                print("\033[31mMissing server info.\033[0m")
+                print("\nUsage: glitch start handler <IP> <PORT>")
+                exit()
+        elif arguments[2] == "creator":
+            exec(open(currunt_path + "Creator/creator.py").read())
+        elif arguments[2] == "binder":
+            exec(open(currunt_path+"Binder/binder.py").read())
+        else:
+            print("No tool found.")
+    else:
+        print("Usage: glitch start <tool>\n")
+        print("Tools:\n   creator\n   handler\n   binder")
+else:
+    print("\033[31mInvalid syntex.\033[0m")
