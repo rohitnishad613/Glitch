@@ -64,8 +64,6 @@ elif (arguments[1] == "start"):
                 exit()
         elif arguments[2] == "creator":
             exec(open(currunt_path + "Creator/creator.py").read())
-        elif arguments[2] == "binder":
-            exec(open(currunt_path+"Binder/binder.py").read())
         else:
             print("No tool found.")
     else:
