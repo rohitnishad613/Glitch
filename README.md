@@ -3,7 +3,7 @@ Framework to create BEST malware and maintain connections forever.
 
 ## Installation
 
-Use the git to install foobar.
+Use the git to install Glitch.
 
 ```bash
 $ git clone https://github.com/rohitnishad613/Glitch.git
