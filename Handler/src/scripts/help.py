@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 print("Handler for Glitch target.\n")
 print("commands:")

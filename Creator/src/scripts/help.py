@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 print("Get BEST possible malware code for you to compile and use.\n")
 print("commands:")

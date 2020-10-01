@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 # >>>>>>>>>>>>>>>>>>
 #
@@ -32,7 +32,7 @@ currunt_path = os.path.split(currunt_path_temp)[0]+"/"
 exec(open(currunt_path + "scripts/banner.py").read())
 
 # make glitch folder in $HOME
-glitch_path = os.environ['HOME'] + "/Glitch"
+glitch_path = os.path.expanduser('~') + "/Glitch"
 if not os.path.isdir(glitch_path):
     os.mkdir(glitch_path)
 
