@@ -3,7 +3,7 @@ A CLI Framework to create BEST malware and maintain connections forever. Get the
 
 ## Installation
 
-Use the git[pip](https://pip.pypa.io/en/stable/) to clone or download Glitch.
+Use the git to clone or download Glitch.
 
 ```bash
 git clone https://github.com/rohitnishad613/Glitch.git
