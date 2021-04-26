@@ -1,37 +1,69 @@
-## Welcome to GitHub Pages
+# Glitch
+A CLI Framework to create BEST malware and maintain connections forever. Get the world's best penetration testing tool now.
 
-You can use the [editor on GitHub](https://github.com/rohitnishad613/Glitch/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Installation
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Use the git to clone or download Glitch.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+git clone https://github.com/rohitnishad613/Glitch.git
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Usage
 
-### Jekyll Themes
+```bash
+$ glitch --help
+```
+this will display,
+```bash
+Glitch v1.0.1 - Framework to create BEST malware and maintain connections forever.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rohitnishad613/Glitch/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Usages :
 
-### Support or Contact
+ glitch <option>
+   Options:
+     -h ,--help          This is to display help(this)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+ glitch start <tool>
+   Tools:
+     creator             Get BEST possible malware code for you to compile and use
+     handler             Control the target devices
+     Example: handler 192.168.43.168 8080
+
+For additional info, contract: http://www.github.com/rohitnishad613/
+```
+
+I think this commend help you.
+
+## Tools
+
+In verison 1.0.0 Glitch have only two tools.
+
+1. creator
+2. handler
+
+### Creator
+This tools is for genrate the python malware file.
+```bash
+$ glitch start cretor
+```
+
+### Handler
+This tools is for genrate the python malware file.
+```bash
+$ glitch start handler 192.168.43.168 4444
+```
+***Note :*** here *192.168.43.168* is your *LHOST* and *4444* is your *LPORT*
+
+I think this commend help you.
+
+## Any issue
+If you have any issue with Glitch or this doc feel free to contract me at ***rohitnishad527527@gmail.com*** or visit my [website](https://rohitnishad613.github.io/) (Not recommended)
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
